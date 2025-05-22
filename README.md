@@ -8,7 +8,8 @@ This repository contains the official implementation of the paper:
 
 ### Prerequisites
 - Python 3.8+
-- PyTorch
+- PyTorch 1.9.0
+- Pytorch3d 0.5.0
 - Open3D
 - NumPy
 
@@ -19,8 +20,13 @@ Please prepare your dynamic point cloud dataset using get_patch.py.
 
 ### Running the Code
 
+for training:
 ```bash
-python main.py
+python main_mix_seq3.py
+```
+for testing:
+```bash
+python main_mix_seq3.py --eval=1
 ```
 
 <!--## 📜 Citation
